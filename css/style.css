@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-    --main-color: #d3ad7f;
+    --main-color: #A97257;
     --black: #13131a;
     --bg: #010103;
     --border: .1rem solid rgba(255,255,255,.3);
@@ -41,8 +41,27 @@ body {
     background: var(--bg);
 }
 
-header {
+section {
+    padding: 2rem 6%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+.header {
     background: var(--bg);
+    opacity: 0.9;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,27 +72,56 @@ header {
     z-index: 1000;
 }
 
-header .logo img {
+.header .logo img {
     height: 6rem;
 }
 
-header .navbar a {
+.header .navbar a {
     margin: 0 1rem;
     font-size: 1.6rem;
     color: #fff;
 }
 
-header .navbar a:hover {
+.header .navbar a:hover {
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
 
-header .menu {
+.header .menu {
     display: none;
     color: #fff;
     font-size: 1.6rem;
 }
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/img/banner-brim.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 45rem;
+    margin-top: -100px;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
 
 
 
@@ -96,12 +144,12 @@ header .menu {
     .header {
         padding: 1.5rem 2rem;
     }
-    iframe {
-        display: none;
+    section {
+        padding: 2rem;
     }
 }
 
-@media (max-width:991px){
+@media (max-width:768px){
     .header .menu {
         display: inline-block;
     }
@@ -124,6 +172,30 @@ header .menu {
         margin: 1.5rem;
         padding: .5rem;
         font-size: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
     }
 }
 
