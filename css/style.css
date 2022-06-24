@@ -102,7 +102,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(../img/banner-brim.png) no-repeat;
+    background: url(../img/banner-brim2.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -111,7 +111,14 @@ section {
     max-width: 45rem;
 }
 
+.home .content img {
+    position: absolute;
+    top: 0; left: 0;
+    max-width: 35rem;   
+}
+
 .home .content h3{
+    position: relative;
     font-family: 'CurlzMT', 'Roboto', sans-serif;
     text-shadow: 2px 2px black;
     font-size: 6rem;
@@ -185,6 +192,11 @@ section {
         text-align: center;
     }
 
+    .home .content img {
+        max-width: 35rem;
+        top: 5rem; left: 10rem;
+    }
+
     .home .content h3 {
         font-size: 4.5rem;
     }
@@ -201,6 +213,11 @@ section {
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+
+    .home .content img {
+        max-width: 35rem;
+        left: 0;
     }
 }
 
