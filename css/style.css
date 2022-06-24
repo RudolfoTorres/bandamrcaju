@@ -73,7 +73,7 @@ section {
     border-bottom: var(--border);
     position: fixed;
     top: 0; left: 0; right: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .header .logo img {
@@ -113,8 +113,8 @@ section {
 
 .home .content img {
     position: absolute;
-    top: 0; left: 0;
-    max-width: 35rem;   
+    top: 11rem; left: 5rem;
+    max-width: 25rem; 
 }
 
 .home .content h3{
@@ -156,6 +156,12 @@ section {
     .header {
         padding: 1.5rem 2rem;
     }
+
+    .home .content img {
+        position: absolute;
+        top: 15rem; 
+    }
+
     section {
         padding: 2rem;
     }
@@ -193,8 +199,7 @@ section {
     }
 
     .home .content img {
-        max-width: 35rem;
-        top: 5rem; left: 10rem;
+        top: 15rem; left: 20rem;
     }
 
     .home .content h3 {
@@ -216,8 +221,7 @@ section {
     }
 
     .home .content img {
-        max-width: 35rem;
-        left: 0;
+        top: 20rem; left: 0;
     }
 }
 
