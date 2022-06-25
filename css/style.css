@@ -109,11 +109,13 @@ section {
 
 .home .content {
     max-width: 45rem;
+    padding-top: 5rem;
+    position: relative;
 }
 
 .home .content img {
     position: absolute;
-    top: 11rem; left: 5rem;
+    top: -5vh; left: 0;
     max-width: 25rem; 
 }
 
@@ -157,11 +159,6 @@ section {
         padding: 1.5rem 2rem;
     }
 
-    .home .content img {
-        position: absolute;
-        top: 15rem; 
-    }
-
     section {
         padding: 2rem;
     }
@@ -198,10 +195,6 @@ section {
         text-align: center;
     }
 
-    .home .content img {
-        top: 15rem; left: 20rem;
-    }
-
     .home .content h3 {
         font-size: 4.5rem;
     }
@@ -218,10 +211,6 @@ section {
 @media (max-width:450px) {
     html {
         font-size: 50%;
-    }
-
-    .home .content img {
-        top: 20rem; left: 0;
     }
 }
 
