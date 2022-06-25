@@ -92,13 +92,13 @@ section {
     padding-bottom: .5rem;
 }
 
-.header .menu {
+.header .icons {
     display: none;
     color: #fff;
     font-size: 2.6rem;
 }
 
-.header .menu div{
+.header .icons div{
     margin: 2rem;
 }
 
@@ -169,7 +169,7 @@ section {
 }
 
 @media (max-width:768px){
-    .header .menu {
+    .header .icons {
         display: inline-block;
     }
 
@@ -208,7 +208,17 @@ section {
     }
 
     iframe {
-        display: none;
+        position: absolute;
+        width: 85%;
+        top: 115%; right: 7%;
+        display: flex;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    .header iframe.active {
+        transform: scaleY(1);
     }
 }
 
