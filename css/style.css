@@ -95,7 +95,11 @@ section {
 .header .menu {
     display: none;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
+}
+
+.header .menu div{
+    margin: 2rem;
 }
 
 .home {
