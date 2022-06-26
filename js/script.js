@@ -18,5 +18,6 @@ window.onscroll = () => {
 lightbox.option({
     'albumLabel': "Imagem %1 de %2",
     'alwaysShowNavOnTouchDevices': true,
-    'wrapAround': true
+    'wrapAround': true,
+    'disableScrolling': true
 });
