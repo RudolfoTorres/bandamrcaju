@@ -220,8 +220,28 @@ section {
     padding: 0 .2rem;
 }
 
+.gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
 
+.gallery .box-container .box {
+    text-align: center;
+}
 
+.gallery .box-container .box img {
+    width: 25rem;
+    padding: .5rem 0;
+    filter: grayscale(1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.gallery .box-container .box img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
 
 
 

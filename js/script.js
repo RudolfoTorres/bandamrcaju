@@ -14,3 +14,9 @@ window.onscroll = () => {
     navbar.classList.remove('active');
     player.classList.remove('active');
 }
+
+lightbox.option({
+    'albumLabel': "Imagem %1 de %2",
+    'alwaysShowNavOnTouchDevices': true,
+    'wrapAround': true
+});
