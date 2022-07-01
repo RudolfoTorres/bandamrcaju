@@ -280,6 +280,51 @@ section {
     border: none;
 }
 
+.contact .row {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .box-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
 
 
 
@@ -365,6 +410,14 @@ section {
     html {
         font-size: 50%;
     }
+
+    .gallery .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: .5rem;
+    }
+
+    .gallery .box-container .box img {
+        width: 20rem;
 }
 
 
