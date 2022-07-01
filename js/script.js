@@ -30,5 +30,6 @@ lightbox.option({
 $('.btnPlace').on('click', function(){
     var urlPlace = this.value;
     document.getElementById('iframeMap').src = urlPlace;
+    window.location = "#schedule";
 });
 
