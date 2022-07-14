@@ -188,23 +188,25 @@
 
         <div class="row">
             <div class="box-contact">
-                <form action="">
+                <form action="https://formsubmit.co/ec28c423a49c928f4d3d818087636bc9" method="POST">
                     <div class="inputBox">
                         <span class="fas fa-user"></span>
-                        <input type="text" placeholder="Nome">
+                        <input name="nome" type="text" placeholder="Nome" required>
                     </div>
                     <div class="inputBox">
                         <span class="fas fa-envelope"></span>
-                        <input type="email" placeholder="Email">
+                        <input name="email" type="email" placeholder="Email" required>
                     </div>
                     <div class="inputBox">
                         <span class="fas fa-phone"></span>
-                        <input type="text" placeholder="Telefone">
+                        <input name="telefone" type="text" placeholder="Telefone">
                     </div>
                     <div class="inputBox">
                         <span class="fas fa-pen"></span>
-                        <textarea name="textarea" rows="5" cols="10" placeholder="Mensagem"></textarea>
+                        <textarea name="mensagem" rows="5" cols="10" placeholder="Mensagem"></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
                     <input class="btn" type="submit" value="Enviar">
                 </form>
             </div>
