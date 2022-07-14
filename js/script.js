@@ -32,4 +32,3 @@ $('.btnPlace').on('click', function(){
     document.getElementById('iframeMap').src = urlPlace;
     window.location = "#schedule";
 });
-
